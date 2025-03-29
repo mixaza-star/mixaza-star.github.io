@@ -1,0 +1,159 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #1C3D2E; /* Hijau tua yang elegan */
+    color: #EDEAE0; /* Putih lembut */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGO */
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* TEKS "BangJib" */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #F4C95D; /* Emas elegan */
+}
+
+/* MENU NAVIGASI */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EDEAE0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F4C95D;
+}
+
+/* GARIS PEMISAH */
+.separator {
+    width: 100%;
+    height: 3px;
+    background-color: #F4C95D;
+    border-radius: 5px;
+}
+
+/* SECTION STYLE */
+.home, .artikel, .galeri, .kontak {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+/* WARNA BACKGROUND */
+.home {
+    background: linear-gradient(135deg, #1A3D2E, #2E5F48);
+    color: #EDEAE0;
+}
+
+/* TEKS UTAMA */
+.home h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* PARAGRAF */
+.home p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ARTIKEL */
+.artikel {
+    background: linear-gradient(135deg, #1F4E38, #2A6B52);
+    color: #EDEAE0;
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* GALERI */
+.galeri {
+    background: linear-gradient(135deg, #18392A, #22543D);
+    color: #EDEAE0;
+    padding: 50px;
+}
+
+.galeri img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeri img:hover {
+    transform: scale(1.05);
+}
+
+/* KONTAK */
+.kontak {
+    background: linear-gradient(135deg, #1C4631, #2D6A4F);
+    color: #EDEAE0;
+    padding: 50px;
+}
+
+.kontak a {
+    color: #F4C95D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.kontak a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: #122A1F;
+    color: #EDEAE0;
+    padding: 20px;
+    font-size: 14px;
+}
