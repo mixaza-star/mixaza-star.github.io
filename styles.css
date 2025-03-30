@@ -7,7 +7,6 @@
 }
 
 /* HEADER */
-/* HEADER */
 header {
     background: #1C3D2E;
     color: #EDEAE0;
@@ -170,45 +169,39 @@ nav ul li a:hover {
 /* Untuk layar tablet & HP */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row; /* Pastikan tetap sejajar */
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding: 10px;
+        text-align: left; /* Supaya tidak ke tengah */
     }
 
-    h1 {
-        font-size: 18px;
+    .logo {
+        width: 60px; /* Sedikit kecil agar lebih proporsional */
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row; /* Supaya tetap sejajar */
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px; /* Beri jarak agar tidak terlalu rapat */
     }
 
     .home {
         padding: 30px;
-        height: auto;
     }
 
     .home h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .home p {
         font-size: 18px;
-    }
-
-    .artikel {
-        padding: 20px;
-    }
-
-    .galeri {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
-    }
-
-    .galeri img {
-        width: 100%;
     }
 }
 
